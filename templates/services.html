@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Services | Tech91</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div id="particles-bg"></div>
+
+<nav class="navbar">
+
+    <div class="logo">
+        <img src="{{ url_for('static', filename='images/logo.png') }}">
+        <span class="brand-name">
+            tech<span class="blue91">91</span>
+        </span>
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/services">Services</a></li>
+        <li><a href="/portfolio">Portfolio</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+
+</nav>
+
+<section class="page-hero">
+
+    <h1 data-aos="fade-up">
+        Our Services
+    </h1>
+
+    <p data-aos="fade-up">
+        Modern digital solutions for every business.
+    </p>
+
+</section>
+
+<section class="services-grid">
+
+    <div class="service-card large" data-aos="zoom-in">
+        <i class="fas fa-laptop-code"></i>
+        <h3>Website Development</h3>
+        <p>
+            Responsive and high-performance websites.
+        </p>
+    </div>
+
+    <div class="service-card large" data-aos="zoom-in">
+        <i class="fas fa-globe"></i>
+        <h3>Web Applications</h3>
+        <p>
+            Scalable custom web platforms.
+        </p>
+    </div>
+
+    <div class="service-card large" data-aos="zoom-in">
+        <i class="fas fa-mobile-alt"></i>
+        <h3>Mobile Applications</h3>
+        <p>
+            Android and iOS solutions.
+        </p>
+    </div>
+
+    <div class="service-card large" data-aos="zoom-in">
+        <i class="fas fa-shopping-cart"></i>
+        <h3>E-Commerce Solutions</h3>
+        <p>
+            Complete online store development.
+        </p>
+    </div>
+
+    <div class="service-card large" data-aos="zoom-in">
+        <i class="fas fa-robot"></i>
+        <h3>Automation</h3>
+        <p>
+            Process optimization and integrations.
+        </p>
+    </div>
+
+    <div class="service-card large" data-aos="zoom-in">
+        <i class="fas fa-bullhorn"></i>
+        <h3>Digital Marketing</h3>
+        <p>
+            Grow your business online effectively.
+        </p>
+    </div>
+
+</section>
+
+<section class="cta">
+
+    <h2>
+        Ready To Transform Your Business?
+    </h2>
+
+    <a href="/contact" class="btn-primary">
+        Contact Us
+    </a>
+
+</section>
+
+<footer>
+
+    <div class="footer-content">
+
+        <h3>Tech91 Digital Solutions</h3>
+
+        <p>
+            Building digital success stories.
+        </p>
+
+    </div>
+
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init();
+</script>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>

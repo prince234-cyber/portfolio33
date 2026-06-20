@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About Tech91</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div id="particles-bg"></div>
+
+<nav class="navbar">
+
+    <div class="logo">
+<img src="{{ url_for('static', filename='images/logo.png') }}">
+<span class="brand-name">
+    tech<span class="blue91">91</span>
+</span>
+</div>
+
+    <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/services">Services</a></li>
+        <li><a href="/portfolio">Portfolio</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+
+</nav>
+
+<section class="page-hero">
+
+    <h1 data-aos="fade-up">
+        About Tech91
+    </h1>
+
+    <p data-aos="fade-up" data-aos-delay="300">
+
+        We help businesses transform ideas into
+        powerful digital experiences using modern
+        technologies and innovative strategies.
+
+    </p>
+
+</section>
+
+<section class="about-main">
+
+    <div class="about-left" data-aos="fade-right">
+
+        <h2>Who We Are</h2>
+
+        <p>
+            Tech91 Digital Solutions is a technology-driven
+            company focused on delivering premium websites,
+            applications, automation systems and digital
+            transformation solutions.
+        </p>
+
+        <p>
+            With a team of experienced developers,
+            designers and digital strategists, we help
+            startups and enterprises build scalable
+            solutions that drive growth.
+        </p>
+
+    </div>
+
+    <div class="about-right" data-aos="fade-left">
+
+        <div class="glass-box">
+            <i class="fas fa-bullseye"></i>
+            <h3>Mission</h3>
+            <p>
+                Deliver high-quality digital solutions
+                that empower businesses.
+            </p>
+        </div>
+
+        <div class="glass-box">
+            <i class="fas fa-eye"></i>
+            <h3>Vision</h3>
+            <p>
+                Become a leading digital innovation partner
+                globally.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="stats-section">
+
+    <div class="stat-card">
+        <h2>150+</h2>
+        <p>Projects</p>
+    </div>
+
+    <div class="stat-card">
+        <h2>200+</h2>
+        <p>Clients</p>
+    </div>
+
+    <div class="stat-card">
+        <h2>50+</h2>
+        <p>Experts</p>
+    </div>
+
+</section>
+
+<section class="timeline-section">
+
+    <h2 data-aos="fade-up">
+        Our Process
+    </h2>
+
+    <div class="timeline">
+
+        <div class="timeline-item">
+            <span>01</span>
+            <h3>Listen To Client</h3>
+        </div>
+
+        <div class="timeline-item">
+            <span>02</span>
+            <h3>Build Strategy</h3>
+        </div>
+
+        <div class="timeline-item">
+            <span>03</span>
+            <h3>Execute & Review</h3>
+        </div>
+
+        <div class="timeline-item">
+            <span>04</span>
+            <h3>Support Client</h3>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <div class="footer-content">
+
+        <h3>Tech91 Digital Solutions</h3>
+
+        <p>
+            Creating innovative digital experiences.
+        </p>
+
+    </div>
+
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init();
+</script>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>

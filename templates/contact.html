@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact | Tech91</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div id="particles-bg"></div>
+
+<nav class="navbar">
+
+<div class="logo">
+<img src="{{ url_for('static', filename='images/logo.png') }}">
+<span class="brand-name">
+    tech<span class="blue91">91</span>
+</span>
+</div>
+
+<ul class="nav-links">
+<li><a href="/">Home</a></li>
+<li><a href="/about">About</a></li>
+<li><a href="/services">Services</a></li>
+<li><a href="/portfolio">Portfolio</a></li>
+<li><a href="/contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<section class="page-hero">
+
+<h1 data-aos="fade-up">
+Contact Us
+</h1>
+
+<p data-aos="fade-up">
+Let's Build Something Amazing Together
+</p>
+
+</section>
+
+<section class="contact-top-cta">
+
+    <h2>
+        Let's Build Something Amazing Together
+    </h2>
+
+    <a href="#" class="btn-primary">
+        Get Started
+    </a>
+
+</section>
+
+<section class="contact-section">
+
+    <!-- CUBE SIDE -->
+    <div class="cube-assistant">
+
+        <div class="cube-glow"></div>
+
+        <img
+        src="{{ url_for('static', filename='images/tech-cube.png') }}"
+        id="contactCube"
+        class="contact-cube">
+
+    </div>
+
+    <!-- FORM SIDE -->
+    <div class="contact-form-container">
+
+        {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+        {% for category, message in messages %}
+
+        <div class="success-message">
+            {{ message }}
+        </div>
+
+        {% endfor %}
+        {% endif %}
+        {% endwith %}
+
+        <form method="POST">
+
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="phone" placeholder="Phone Number">
+            <textarea name="message" rows="6" placeholder="Write Your Message" required></textarea>
+
+            <button type="submit">
+                Send Message
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<footer>
+
+<div class="footer-content">
+
+<h3>Tech91 Digital Solutions</h3>
+
+<p>
+Building The Future Digitally
+</p>
+
+</div>
+
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init();
+</script>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>
