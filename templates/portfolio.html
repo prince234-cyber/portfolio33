@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Portfolio | Tech91</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div id="particles-bg"></div>
+
+<nav class="navbar">
+
+<div class="logo">
+<img src="{{ url_for('static', filename='images/logo.png') }}">
+<span class="brand-name">
+    tech<span class="blue91">91</span>
+</span>
+</div>
+
+<ul class="nav-links">
+<li><a href="/">Home</a></li>
+<li><a href="/about">About</a></li>
+<li><a href="/services">Services</a></li>
+<li><a href="/portfolio">Portfolio</a></li>
+<li><a href="/contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<section class="page-hero">
+
+<h1 data-aos="fade-up">
+Our Portfolio
+</h1>
+
+<p data-aos="fade-up">
+Projects That Showcase Innovation & Creativity
+</p>
+
+</section>
+
+<section class="portfolio-grid">
+
+<div class="project-card" data-aos="zoom-in">
+
+<img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f">
+
+<div class="project-info">
+<h3>Corporate Website</h3>
+<p>Modern business website solution.</p>
+</div>
+
+</div>
+
+<div class="project-card" data-aos="zoom-in">
+
+<img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71">
+
+<div class="project-info">
+<h3>Dashboard Application</h3>
+<p>Analytics & Management Platform.</p>
+</div>
+
+</div>
+
+<div class="project-card" data-aos="zoom-in">
+
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3">
+
+<div class="project-info">
+<h3>E-Commerce Store</h3>
+<p>Online selling platform.</p>
+</div>
+
+</div>
+
+<div class="project-card" data-aos="zoom-in">
+
+<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
+
+<div class="project-info">
+<h3>Web Application</h3>
+<p>Custom enterprise solution.</p>
+</div>
+
+</div>
+
+<div class="project-card" data-aos="zoom-in">
+
+<img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d">
+
+<div class="project-info">
+<h3>Mobile App UI</h3>
+<p>Premium user experience design.</p>
+</div>
+
+</div>
+
+<div class="project-card" data-aos="zoom-in">
+
+<img src="https://images.unsplash.com/photo-1518770660439-4636190af475">
+
+<div class="project-info">
+<h3>Automation System</h3>
+<p>Business process automation.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="cta">
+
+<h2>
+Have a Project in Mind?
+</h2>
+
+<a href="/contact" class="btn-primary">
+Let's Talk
+</a>
+
+</section>
+
+<footer>
+
+<div class="footer-content">
+<h3>Tech91 Digital Solutions</h3>
+<p>Delivering Innovation Through Technology</p>
+</div>
+
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init();
+</script>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>
